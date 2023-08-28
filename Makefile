@@ -9,6 +9,3 @@ build:
 
 sh:
 	docker exec -it example_php sh
-
-symfony-sh:
-	docker exec -it example_php sh
