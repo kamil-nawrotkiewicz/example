@@ -1,0 +1,10 @@
+# config/api_platform/resources/address.yaml
+resources:
+  App\UserManagement\Domain\Entity\Address:
+    itemOperations:
+      get
+    collectionOperations:
+      get
+    attributes:
+      normalization_context:
+        groups: ['read']

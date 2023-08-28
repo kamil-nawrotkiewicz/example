@@ -1,0 +1,20 @@
+# config/api_platform/resources/user.yaml
+resources:
+  App\UserManagement\Domain\Entity\User:
+    itemOperations:
+      get:
+        normalization_context:
+          groups: ['read']
+      delete: ~
+    collectionOperations:
+      get:
+        normalization_context:
+          groups: ['read']
+      post:
+        normalization_context:
+          groups: ['read']
+    attributes:
+      normalization_context:
+        groups: ['read']
+      denormalization_context:
+        groups: ['write']
