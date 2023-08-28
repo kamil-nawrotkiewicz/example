@@ -17,7 +17,7 @@ mm:
 	docker exec -it example_php bin/console doctrine:migrations:migrate
 
 fixtures:
-	docker exec -it example_php bin/console doctrine:fixtures:load -append
+	docker exec -it example_php bin/console doctrine:fixtures:load --append
 
 composer-install:
 	docker exec -it example_php composer install
