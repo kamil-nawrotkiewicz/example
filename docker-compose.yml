@@ -3,7 +3,9 @@ version: '3.8'
 services:
   nginx:
     container_name: example_nginx
-    image: nginx:latest
+    build:
+      context: .
+      dockerfile: ./docker/local/nginx/Dockerfile
     ports:
       - "80:80"
     volumes:
@@ -17,7 +19,7 @@ services:
     container_name: example_php
     build:
       context: .
-      dockerfile: ./docker/Dockerfile
+      dockerfile: ./docker/local/php-fpm/Dockerfile
     volumes:
       - ./app:/var/www/html
     networks:
