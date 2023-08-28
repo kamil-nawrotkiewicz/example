@@ -1,8 +1,6 @@
 # Use the official PHP-FPM image
 FROM php:8.2-fpm
 
-MAINTAINER Kamil Nawrotkiewicz <kamil.nawrotkiewicz@innovcode.it>
-
 # Set working directory
 WORKDIR /var/www/html
 
