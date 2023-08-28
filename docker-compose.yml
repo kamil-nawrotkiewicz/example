@@ -9,7 +9,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./app/public:/var/www/html
+      - ./app:/var/www/html
     depends_on:
       - php
     networks:
