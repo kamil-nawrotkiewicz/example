@@ -7,5 +7,8 @@ down:
 build:
 	docker-compose up -d --build
 
-sh:
+sh-php:
+	docker exec -it example_php sh
+
+sh-nginx:
 	docker exec -it example_php sh
